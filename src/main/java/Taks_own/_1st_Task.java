@@ -1,4 +1,4 @@
-package Taks;
+package Taks_own;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

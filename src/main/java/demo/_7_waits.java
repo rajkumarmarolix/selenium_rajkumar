@@ -24,14 +24,15 @@ public static void main(String[] args) {
 	
 	driver.manage().window().maximize();
 	
-	WebDriverWait wait= new WebDriverWait(driver, 15);
+	//WebDriverWait wait= new WebDriverWait(driver, 15);
 	
+	    //popup icon
 	driver.findElement(By.id("alert")).click();  // after 5 seconds popup dusplay
 	
-	wait.until(ExpectedConditions.alertIsPresent());
+	//wait.until(ExpectedConditions.alertIsPresent());
 	
 	driver.switchTo().alert().accept();
 	
-	driver.close();
+	//driver.close();
 }
 }
