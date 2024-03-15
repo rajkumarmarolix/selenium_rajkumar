@@ -1,4 +1,4 @@
-package Taks;
+package Taks_own;
 
 import java.util.concurrent.TimeUnit;
 
@@ -26,12 +26,12 @@ WebDriverManager.chromedriver().setup();
 	driver.manage().window().maximize();
 	
 	  //Explict wait
-	WebDriverWait wait= new WebDriverWait(driver, 15);
+	//WebDriverWait wait= new WebDriverWait(driver, 15);
 	 
 	   //1.Alret messahe displayed
 	driver.findElement(By.id("alert")).click();  // after 5 seconds popup display
 	
-	wait.until(ExpectedConditions.alertIsPresent());
+	//wait.until(ExpectedConditions.alertIsPresent());
 	
 	driver.switchTo().alert().accept();
 	   
